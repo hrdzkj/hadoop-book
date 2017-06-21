@@ -2,3 +2,5 @@ export HADOOP_HOME=/opt/hadoop-2.6.0
 export PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin
 
 hdfs namenode -format
+
+https://www.shiyanlou.com/courses/222
