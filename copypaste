@@ -1,5 +1,3 @@
-export PATH=$PATH:$JAVA_HOME/bin
 export HADOOP_HOME=/opt/hadoop-2.6.0
-export PATH=$PATH:HADOOP_HOME/bin
+export PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin
 
-https://github.com/hrdzkj/hadoop-book.git
