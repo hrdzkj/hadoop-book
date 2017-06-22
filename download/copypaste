@@ -13,4 +13,7 @@ hdfs namenode -format
 
 // 无密码登陆
 ssh-keygen -t rsa                       #会有很多提示，全部回车即可
-cat ./id_rsa.pub >> ./authorized_keys  
+cat ./id_rsa.pub >> ./authorized_keys 
+
+输入代码  sudo -s      
+  然后输入shiyanlou进行登录root用户
