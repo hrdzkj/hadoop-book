@@ -8,3 +8,4 @@ hdfs namenode -format
 ssh-keygen -t rsa                       #会有很多提示，全部回车即可
 cat ./id_rsa.pub >> ./authorized_keys  
 https://www.shiyanlou.com/courses/222
+http://www.cnblogs.com/vincentzh/p/5967274.html  # 配置例子
