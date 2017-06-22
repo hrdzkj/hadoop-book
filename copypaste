@@ -4,4 +4,7 @@ export PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 ---改为.sh
 hdfs namenode -format
 
+// 无密码登陆
+ssh-keygen -t rsa                       #会有很多提示，全部回车即可
+cat ./id_rsa.pub >> ./authorized_keys  
 https://www.shiyanlou.com/courses/222
