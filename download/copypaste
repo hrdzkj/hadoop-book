@@ -2,6 +2,13 @@
 https://www.shiyanlou.com/courses/222
 http://www.cnblogs.com/vincentzh/p/5967274.html  # 配置例子
 
+//更新软件列表和软件
+sudo apt-get update;
+sudo apt-get upgrade;
+sudo apt-get install ufw;
+
+sudo ufw disable
+
 hdfs namenode -format
 
 // 无密码登陆
