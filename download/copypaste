@@ -26,3 +26,6 @@ cat ./id_rsa.pub >> ./authorized_keys
 
 目前问题是：sudo -s root用户权限执行关闭防火墙 仍然提示要root用户权限
 实验吧的hadoop地址 http://www.shiyanbar.com/experiment-course/detail/334
+
+-----实验吧
+yum install -y git   
