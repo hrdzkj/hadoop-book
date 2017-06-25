@@ -2,30 +2,42 @@
 https://www.shiyanlou.com/courses/222
 http://www.cnblogs.com/vincentzh/p/5967274.html  # 配置例子
 
+1.切换到root
+输入代码  sudo -s      
+然后输入shiyanlou进行登录root用户
+
+2. 修改/etc/ssh/ssh_config文件（或$HOME/.ssh/config）中的配置，添加如下两行配置：
+StrictHostKeyChecking no
+UserKnownHostsFile /dev/null
+
+3.无密码登陆
+ssh-keygen -t rsa                       #会有很多提示，全部回车即可
+cat /root/.ssh/id_rsa.pub >> /root/.ssh/authorized_keys 
+
+4. chmod 777 hadoop/download/envpara.sh 
+   ./hadoop/download/envpara.sh 
+   
+ 5.启动hadoop
+  cd hadoop-2.4.1
+  $ hdfs namenode -format  ＃初始化 namenode
+  $ start-dfs.sh           #启动hdfs，含NameNode、DataNode、SecondaryNameNode守护进程
+  $ start-yarn.sh          #启动yarn，含ResourceManager、NodeManager
+
 //更新软件列表和软件
 sudo apt-get update;
 sudo apt-get upgrade;
 sudo apt-get install ufw;
 
 
-// 无密码登陆
-ssh-keygen -t rsa                       #会有很多提示，全部回车即可
-cat ./id_rsa.pub >> ./authorized_keys 
 
-//关闭防火墙
-输入代码  sudo -s      
-  然后输入shiyanlou进行登录root用户
+
+
   
   root@master:# ufw disable
   
-  //启动hadoop
-  $ hdfs namenode -format
-  $ start-dfs.sh                                     #启动hdfs，含NameNode、DataNode、SecondaryNameNode守护进程
-2 $ start-yarn.sh                                    #启动yarn，含ResourceManager、NodeManager
+
 3 $ mr-jobhistory-daemon.sh start historyserver      #开启历史服务器，才能在Web中查看任务运行情况
 
 目前问题是：sudo -s root用户权限执行关闭防火墙 仍然提示要root用户权限
 实验吧的hadoop地址 http://www.shiyanbar.com/experiment-course/detail/334
 
------实验吧
-yum install -y git   
