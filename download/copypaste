@@ -22,6 +22,9 @@ cat /root/.ssh/id_rsa.pub >> /root/.ssh/authorized_keys
   $ hdfs namenode -format  ＃初始化 namenode
   $ start-dfs.sh           #启动hdfs，含NameNode、DataNode、SecondaryNameNode守护进程
   $ start-yarn.sh          #启动yarn，含ResourceManager、NodeManager
+  
+  6. 实验例子
+  http://blog.csdn.net/boonya/article/details/54629816
 
 //更新软件列表和软件
 sudo apt-get update;
