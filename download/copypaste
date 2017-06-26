@@ -26,7 +26,7 @@ cat /root/.ssh/id_rsa.pub >> /root/.ssh/authorized_keys
   6. 实验例子
   http://blog.csdn.net/boonya/article/details/54629816
 
-7. 开发环境搭建
+7. 开发环境搭建 （http://blog.csdn.net/songchunhong/article/details/47046701）
 搭建好伪分布式后，安装好eclipse，在用eclipse运行第一个wordcount实例之前先要给eclipse安装hadoop开发插件
 安装插件方法：
 1.把插件即下载得到的jar包放到eclipse安装目录的plugins目录中。然后重新打开eclipse，点击project——>clean。
