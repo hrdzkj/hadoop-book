@@ -14,14 +14,16 @@ UserKnownHostsFile /dev/null
 ssh-keygen -t rsa                       #会有很多提示，全部回车即可
 cat /root/.ssh/id_rsa.pub >> /root/.ssh/authorized_keys 
 
-4. chmod 777 hadoop/download/envpara.sh 
-   ./hadoop/download/envpara.sh 
+4. chmod 777 hadoop-book/download/envpara.sh 
+   ./hadoop-book/download/envpara.sh 
    
- 5.启动hadoop
-  cd hadoop-2.4.1
+ 5.1启动hadoop
+  cd /opt/hadoop-2.4.1
   $ hdfs namenode -format  ＃初始化 namenode
   $ start-dfs.sh           #启动hdfs，含NameNode、DataNode、SecondaryNameNode守护进程
   $ start-yarn.sh          #启动yarn，含ResourceManager、NodeManager
+ 
+ 5.2 拷贝hadoop-eclipse-plugin.jar
   
   6. 实验例子
   http://blog.csdn.net/boonya/article/details/54629816
