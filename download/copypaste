@@ -24,7 +24,7 @@ cat /root/.ssh/id_rsa.pub >> /root/.ssh/authorized_keys
   $ start-yarn.sh          #启动yarn，含ResourceManager、NodeManager
  
  5.2 拷贝hadoop-eclipse-plugin.jar
-  
+  cp /hadoop-book/2.4.1jar/
   6. 实验例子
   http://blog.csdn.net/boonya/article/details/54629816
 
@@ -40,16 +40,13 @@ sudo apt-get update;
 sudo apt-get upgrade;
 sudo apt-get install ufw;
 
-//git下载指定目录
-mkdir hadoopCode
-cd hadoopCode
+//git下载指定目录或文件
+mkdir hadoopbook
+cd hadoopbook
 git init
 git config core.sparseCheckout true
 echo '/2.4.1jar/*' >> .git/info/sparse-checkout
 git remote add origin https://github.com/hrdzkj/hadoop-book.git
-
-
-
 
   
   root@master:# ufw disable
