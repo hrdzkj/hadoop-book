@@ -40,6 +40,13 @@ sudo apt-get update;
 sudo apt-get upgrade;
 sudo apt-get install ufw;
 
+//git下载指定目录
+mkdir hadoopCode
+cd hadoopCode
+git init
+git config core.sparseCheckout true
+echo '/2.4.1jar/*' >> .git/info/sparse-checkout
+git remote add origin https://github.com/hrdzkj/hadoop-book.git
 
 
 
