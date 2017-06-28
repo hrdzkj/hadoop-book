@@ -41,13 +41,12 @@ sudo apt-get upgrade;
 sudo apt-get install ufw;
 
 //git下载指定目录或文件
-mkdir hadoopbook
-cd hadoopbook
+mkdir hadoopbook && cd hadoopbook
 git init
 git config core.sparseCheckout true
 echo '/2.4.1jar/*' >> .git/info/sparse-checkout
 git remote add origin https://github.com/hrdzkj/hadoop-book.git
-
+git pull origin master
   
   root@master:# ufw disable
   
